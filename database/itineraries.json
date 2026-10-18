@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "62c86fc16312bfb1cc798c01"
+  },
+  "email": "harisantoniadi@gmail.com",
+  "date": "2022-07-09",
+  "time": [
+    "11:00",
+    "22:00"
+  ],
+  "activity": [
+    "Scuba Diving",
+    "Cinema"
+  ]
+},{
+  "_id": {
+    "$oid": "62c8e3fbd4b24e10f6479924"
+  },
+  "email": "brittaperry@mail.com",
+  "date": "2022-07-25",
+  "time": [
+    "10:00",
+    "21:00"
+  ],
+  "activity": [
+    "Visiting the beach",
+    "Dining"
+  ]
+}]

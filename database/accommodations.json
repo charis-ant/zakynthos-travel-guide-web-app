@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "62c0bce749f64e13141c12fc"
+  },
+  "name": "Joya Luxury Villas",
+  "location": "Drosia",
+  "category": "villa",
+  "price": "250",
+  "description": "Joya Luxury Villas is a complex of two luxury villas located in the area of Drosia, Zakynthos, which is situated only 100 meters from the sea and surrounded by beautiful olive groves.",
+  "image": "images/joya_villas.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c1ec49f64e13141c12fd"
+  },
+  "name": "Villa Anemona",
+  "location": "Tsilivi",
+  "category": "villa",
+  "price": "130",
+  "description": "Impeccably finished in a contemporary style, this stylish 4 bedroom villa ticks all the boxes. Located just a 5 minute drive from Tsilivi centre, Villa Anemona is perfectly placed to explore the sandy beach and plentiful bars and restaurants of the resort. Back at the villa, you can relax in the stylish surroundings.",
+  "image": "images/villa_anemona.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c25c49f64e13141c12fe"
+  },
+  "name": "Cavo Orient Beach Hotel",
+  "location": "Kypseli",
+  "category": "hotel",
+  "price": "210",
+  "description": "Cavo Orient Beach Hotel is located in Zakynthos at the picturesque village of Kypseli. This luxury brand new property (opening May 2018) offers contemporary, sleek architecture and design. Beautiful Mediterranean gardens lead to a private beach with crystal blue Ionian views. Guests may relax by the pool, enjoying refreshments & cocktails or dine in the elegant premises of two restaurants before enjoying the rich options of the Zante nightlife.",
+  "image": "images/cavo_orient.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c44d49f64e13141c1300"
+  },
+  "name": "Villa Belen",
+  "location": "Drosia",
+  "category": "villa",
+  "price": "330",
+  "description": "A villa of unique magnificence, combining modern design with elegance and stylish luxury; Villa Belen is a fantastic luxurious villa, with absolute privacy and a swimming pool. It is located in Drosia, just a few meters from the sandy beach enjoying a view of the Ionian Sea.",
+  "image": "images/villa_belen.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c49c49f64e13141c1301"
+  },
+  "name": "Olea All Suite Hotel",
+  "location": "Planos",
+  "category": "hotel",
+  "price": "588",
+  "description": "Is a unique 5 star hotel, set on a picturesque hill, surrounded by olive trees and green, walking distance from tsilivi resort, 10 minutes from zakynthos town and airport. The stunning view, the proximity to the village and the sandy beaches, in combination with the exceptional service and ambience, make Olea the ideal place for a romantic and relaxing holiday.",
+  "image": "images/olea_hotel.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c52c49f64e13141c1302"
+  },
+  "name": "Koukounaria Hotel and Suites",
+  "location": "Katastari",
+  "category": "hotel",
+  "price": "140",
+  "description": "The recently renovated Koukounaria Hotel & Suites is situated right in the center of ALYKES, a place where it got its name from the salt flats where salt used to be produced. The hotel is situated right next to these salt flats. Alykes is full of restaurants and tavernas serving countless exquisite island delicacies and activities.",
+  "image": "images/koukounaria.png"
+},{
+  "_id": {
+    "$oid": "62c0c5b649f64e13141c1303"
+  },
+  "name": "Onar Residence",
+  "location": "Lagopodo",
+  "category": "apartment",
+  "price": "188",
+  "description": "“Onar” in ancient Greek means “Dream”; and that is exactly what we want you to do while you stay in our vacation homes: to experience the holidays of your dreams in Zakynthos! For that reason, Onar Residence provides everything you need and more to make you feel like staying in your own cozy and comfortable island cottage: From the private pool with the sun loungers, the barbecue and the well-shaped gardens, to the fully-equipped, beautifully decorated interiors, Onar is not just another vacation rental, but a real home.",
+  "image": "images/onar_residence.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c69149f64e13141c1304"
+  },
+  "name": "Nemorosa Apartments",
+  "location": "Meso Gerakari",
+  "category": "apartment",
+  "price": "105",
+  "description": "This property is 2 minutes walk from the beach. Located in Meson Yerakarion in the Zakynthos region, with Psarou Beach and Drosia Beach nearby, Nemorosa Apartments provides accommodations with free private parking. The air-conditioned units are furnished with tiled floors and feature a private bathroom, a flat-screen TV, free WiFi, desk, a living room, an equipped kitchen, patio and views over the garden. There's a seating and/or dining area in some units.",
+  "image": "images/nemorosa_apartments.jpg"
+},{
+  "_id": {
+    "$oid": "62c0c6e949f64e13141c1305"
+  },
+  "name": "The Green Garden Cottage",
+  "location": "Romiri",
+  "category": "apartment",
+  "price": "76",
+  "description": "The Green Garden Cottage, a property with a garden, is located in Zakynthos, 5.3 km from Port of Zakynthos, 5.8 km from Dionisios Solomos Square, as well as 5.1 km from Zakynthos' Karnival. The air-conditioned accommodation is 5 km from Agios Dionysios Church, and guests benefit from private parking available on site and free WiFi. The apartment comes with 1 bedroom, 1 bathroom, bed linen, towels, a flat-screen TV, a dining area, a fully equipped kitchenette, and a patio with garden views.",
+  "image": "images/the_green_garden_cottage.jpg"
+}]

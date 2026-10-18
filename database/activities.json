@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "62c0cbef49f64e13141c1308"
+  },
+  "name": "Scuba Diving",
+  "category": "excursion",
+  "image": "images/scuba.jpg"
+},{
+  "_id": {
+    "$oid": "62c0ccda49f64e13141c1309"
+  },
+  "name": "Horseback Riding",
+  "category": "excursion",
+  "image": "images/horse.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cd0849f64e13141c130a"
+  },
+  "name": "Dining",
+  "category": "food",
+  "image": "images/dining.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cd4349f64e13141c130b"
+  },
+  "name": "Cinema",
+  "category": "entertainment",
+  "image": "images/cinema.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cd7b49f64e13141c130c"
+  },
+  "name": "Theatre",
+  "category": "entertainment",
+  "image": "images/theatre.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cdaa49f64e13141c130d"
+  },
+  "name": "Shopping",
+  "category": "entertainment",
+  "image": "images/shopping.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cdce49f64e13141c130e"
+  },
+  "name": "Visiting the beach",
+  "category": "excursion",
+  "image": "images/beach.jpg"
+},{
+  "_id": {
+    "$oid": "62c0cdf649f64e13141c130f"
+  },
+  "name": "Boat Tour of the island",
+  "category": "excursion",
+  "image": "images/boat.jpg"
+}]

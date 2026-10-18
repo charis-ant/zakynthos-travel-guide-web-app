@@ -1,0 +1,105 @@
+[{
+  "_id": {
+    "$oid": "62c875238a57a6ab35f21b05"
+  },
+  "email": "martybyrde@mail.com",
+  "event": "Open Air Cinema - Psycho",
+  "date": "02/07",
+  "tickets": 2,
+  "name": [
+    "",
+    "Marty",
+    "Wendy"
+  ],
+  "surname": [
+    "",
+    "Byrde",
+    "Byrde"
+  ],
+  "total": "14",
+  "type": "event"
+},{
+  "_id": {
+    "$oid": "62c8d77dd4b24e10f6479922"
+  },
+  "email": "martybyrde@mail.com",
+  "accommodation": "Joya Luxury Villas",
+  "checkIn": "2022-07-30",
+  "checkOut": "2022-07-31",
+  "people": "2",
+  "name": [
+    "",
+    "Marty",
+    "Wendy"
+  ],
+  "surname": [
+    "",
+    "Byrde",
+    "Byrde"
+  ],
+  "dob": [
+    "",
+    "1970-01-10",
+    "1970-07-17"
+  ],
+  "id": [
+    "",
+    "idnum1",
+    "idnum2"
+  ],
+  "total": "500",
+  "card": "amex",
+  "name on card": "M BYRDE",
+  "card number": "1111111111111111",
+  "status": "reserved",
+  "type": "accommodation"
+},{
+  "_id": {
+    "$oid": "62c8df7ed4b24e10f6479923"
+  },
+  "email": "brittaperry@mail.com",
+  "event": "Yoga at the Farm",
+  "date": "05/07",
+  "tickets": 1,
+  "name": [
+    "",
+    "Britta"
+  ],
+  "surname": [
+    "",
+    "Perry"
+  ],
+  "total": "15",
+  "type": "event"
+},{
+  "_id": {
+    "$oid": "62c985b2557362a7556b91d9"
+  },
+  "email": "brittaperry@mail.com",
+  "accommodation": "Nemorosa Apartments",
+  "checkIn": "2022-07-12",
+  "checkOut": "2022-07-13",
+  "people": "1",
+  "name": [
+    "",
+    "Britta"
+  ],
+  "surname": [
+    "",
+    "Perry"
+  ],
+  "dob": [
+    "",
+    "1985-10-15"
+  ],
+  "id": [
+    "",
+    "idnum3"
+  ],
+  "total": "105",
+  "card": "msc",
+  "name on card": "B PERRY",
+  "card number": "1111111111111111",
+  "status": "cancelled",
+  "type": "accommodation"
+}]

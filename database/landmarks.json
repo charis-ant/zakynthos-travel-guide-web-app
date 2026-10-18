@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "62c0d1f049f64e13141c131c"
+  },
+  "name": "Shipwreck Beach - Navagio",
+  "description": "When the MV Panagiotis ran aground on a sandy cove in northwest Zakynthos in 1980, no one could have predicted that one of Europe’s most iconic beaches would be born. It’s not just the much-photographed shipwreck at its centre, but the imposing cliffs rising far above and the electric-blue waters surrounding it. And to cap the sense of mystery, it’s a beach accessible only by sea. The water there often radiates impossible shades of blue, from the mineral deposits in the caves around the beach. You’ll have the chance to stay on the beach and swim. But the real swimming treat comes from the stops made by the boat on the way there or back. Just don’t forget your camera.",
+  "image": "images/shipwreck.jpg"
+},{
+  "_id": {
+    "$oid": "62c0d25749f64e13141c131d"
+  },
+  "name": "Kampi Cross",
+  "description": "A cement cross of such dimensions to be spotted even at kilometres of distance from the town where it is located, Kabì or Kampi. The cross strikes for its dimensions but it represents and remembers those who passed away in the civil war.It is impossible to forget them with a symbol that is visible from the sea even though located on a promontory more than three hundred and fifty metres from the sea level.",
+  "image": "images/cross_kampi.jpg"
+},{
+  "_id": {
+    "$oid": "62c0d2bb49f64e13141c131e"
+  },
+  "name": "National Marine Park of Zakynthos",
+  "description": "Zakynthos’ Marine Park is located along the southern coast from the promontory of Marathia’s Cape to the beach of Gerakas, including the outback of the beaches of Limni Kerì, Laganas and Kalamaki and the Strofades, two small islands 50 nautical miles southern of Zakynthos. The National Marine Park has been founded in 1999 with the main purpose of defending the particular fauna of the southern part of the island and of its integration with the local society. The most important animal specimen to protect are the turtles Caretta-Caretta and the Mediterranean Seals Monachus-Monachus",
+  "image": "images/marine_park.jpg"
+}]

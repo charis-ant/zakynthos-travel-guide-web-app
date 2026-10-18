@@ -1,0 +1,89 @@
+[{
+  "_id": {
+    "$oid": "62c0ce6349f64e13141c1312"
+  },
+  "name": "Giostra",
+  "date": "05/06",
+  "description": "Giostra is one of the oldest events known which takes place during the Zakynthian Carnival. Along with ball dancing, these were the most common forms of entertainment during carnival period on our reputable Island. Giostra is an impressive equestrian event of horse and rider skills where, among other things, the knight must pull with his pole, a ring which is hung on a wooden structure.",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1419786274537!2d20.897981915159804!3d37.786712319245844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136747d5b2fa1bd1%3A0xffd0f18042dbfc17!2sSolomos%20Square!5e0!3m2!1sen!2sgr!4v1655908592274!5m2!1sen!2sgr",
+  "image": "images/giostra.jpg",
+  "price": "3",
+  "tickets": 2
+},{
+  "_id": {
+    "$oid": "62c0cef249f64e13141c1313"
+  },
+  "name": "Staying Alive with Katerina Vrana",
+  "date": "18/06",
+  "description": "Katerina Vrana, with her weapon of humor, managed to turn her encounter with death into a source of optimism and laughter. She uniquely imitates this encounter, as well as the stormy adventure of her health, in the performance of \"Staying Alive\".",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.975679780941!2d20.895052015159898!3d37.79060971902157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1367462b5548ea85%3A0x7f84f1c3ecb13a2e!2zzqXPgM6xzq_OuM-BzrnOvyDOlM63zrzOv8-EzrnOus-MIM6Yzq3Osc-Ez4HOvyDOls6xzrrPjc69zrjOv8-F!5e0!3m2!1sen!2sgr!4v1655908660895!5m2!1sen!2sgr",
+  "image": "images/staying.png",
+  "price": "8",
+  "tickets": 1
+},{
+  "_id": {
+    "$oid": "62c0cf7949f64e13141c1314"
+  },
+  "name": "Summer Reading and Creativity Campaign",
+  "date": "10-28/06",
+  "description": "The Summer Reading and Creativity Campaign of the National Library of Greece is back! From Wednesday, June 29 until Sunday, September 4, the libraries of the Hellenic Library Network will reopen their doors to welcome their young and old friends, to read old and new stories, to be inspired, to explore, to play with nature, and through original actions to discover new reading paths.",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1148121601245!2d20.89797891515977!3d37.787349019209145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136747d5ab1dc0fb%3A0xf602e8aeae5673b4!2zzpTOt868z4zPg865zrEgzpnPg8-Ezr_Pgc65zrrOriDOks65zrLOu865zr_OuM6uzrrOtyDOls6xzrrPjc69zrjOv8-F!5e0!3m2!1sen!2sgr!4v1655908763766!5m2!1sen!2sgr",
+  "image": "images/summer.jpg",
+  "price": "1",
+  "tickets": 0
+},{
+  "_id": {
+    "$oid": "62c0cfc749f64e13141c1315"
+  },
+  "name": "Yoga at the Farm",
+  "date": "05/07",
+  "description": "Open Yoga class at Gouma Estate. Come and experience life as all you need is your physical presence .... and your mat.",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.5589519000114!2d20.721722015161443!3d37.84720991576188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136741e61cf29c53%3A0x87840b05ac34f694!2sGoumas%20Estate%20Winery%20-%20Art%20%26%20Wine!5e0!3m2!1sen!2sgr!4v1655908794462!5m2!1sen!2sgr",
+  "image": "images/yoga.jpg",
+  "price": "15",
+  "tickets": 1
+},{
+  "_id": {
+    "$oid": "62c0d01749f64e13141c1316"
+  },
+  "name": "Open Air Cinema - Psycho",
+  "date": "02/07",
+  "description": "Rare gems of world cinema, classic masterpieces, premieres, short and long screenings of modern Greek cinema as well as silent movies with live music, transform each venue into a unique cinematic experience. Visit Cine \"Christos Negas\" for a summer open air projection of the classic 1960  film \"Psycho\" by Alfred Hitchcock.",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.908070567515!2d20.897277815160002!3d37.79219411893052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1367462b2f7d8f45%3A0xefddd8ea8a2e5435!2sOpen%20Air%20Cinema%20%22Christos%20Negas%22!5e0!3m2!1sen!2sgr!4v1655908830578!5m2!1sen!2sgr",
+  "image": "images/psycho.jpg",
+  "price": "7",
+  "tickets": 6
+},{
+  "_id": {
+    "$oid": "62c0d08649f64e13141c1317"
+  },
+  "name": "Book Presentation - Nyxterides by Lena Kitsopoulou",
+  "date": "09/07",
+  "description": "AWARD FOR THE FIRST APPEARANCE OF THE \"DIAVAZO\" MAGAZINE, 2007\n                            A thirteen-year-old girl breaks down the door of adolescence and enters. A mother crouches desperately over the toilet bowl. A middle-aged man has been down for hours. A young man walks in the cold with his hands tucked in his pockets. A father cries while frying potatoes. A Yula has wrapped the telephone cord around her neck. Does the family sit at the table and eat a goat in the oven or does it eat its members?The heroes of the book fight desperately to subdue their dark and violent instincts, but these are the ones that will push them to the next step, sometimes liberating, sometimes destructive, but always necessary and inevitable. ",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1148121601245!2d20.89797891515977!3d37.787349019209145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136747d5ab1dc0fb%3A0xf602e8aeae5673b4!2zzpTOt868z4zPg865zrEgzpnPg8-Ezr_Pgc65zrrOriDOks65zrLOu865zr_OuM6uzrrOtyDOls6xzrrPjc69zrjOv8-F!5e0!3m2!1sen!2sgr!4v1655908763766!5m2!1sen!2sgr",
+  "image": "images/book.jpg",
+  "price": "2",
+  "tickets": 1
+},{
+  "_id": {
+    "$oid": "62c0d0d149f64e13141c1318"
+  },
+  "name": "1st Festival of Greek Tastes",
+  "date": "05/08",
+  "description": "The Cultural Association of Aggeriko Martelaos, the Local Community of Aggeriko and the Voluntary team of Zakynthos, invite you at the 1st Festival of Greek Tastes that will take place in the square of Agios Charalambis in Plessika of Aggerikos. Friends from all over Greece and beyond will cook for you with the recipes of their place, with fun and talent. And all this of course with the accompaniment of good wine, music and dance. And the most important ingredient ...You, your participation and your good mood!!! Have fun!",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12611.278914480556!2d20.808226389856323!3d37.794264298569686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13674782fe6e3a7b%3A0x17d92b5e6c2c43e6!2sSaint%20Charalampos!5e0!3m2!1sen!2sgr!4v1655908933585!5m2!1sen!2sgr",
+  "image": "images/festival.jpg",
+  "price": "3",
+  "tickets": 0
+},{
+  "_id": {
+    "$oid": "62c0d11c49f64e13141c1319"
+  },
+  "name": "Fiest of Menoudeli",
+  "date": "19/08",
+  "description": "It is a fact that this is a purely urban custom. In the villages they did not observe it, in many they did not even know about it and in Lagadakia they set up the custom of \"Menoudeli\", marking the beginning of the fast of the 15th of August. This year too, this event was crowned with great success, handing out a menu with fresh tomatoes from the steaming cauldrons to the attendees. At the same time a Speech was presented with wine, dance and song in abundance",
+  "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.3825636492784!2d20.807945015159028!3d37.757627020919294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136738ad0f41831b%3A0x65e981f00b4f7a60!2sChurch%20Of%20St%20Timothy%20And%20Mavra!5e0!3m2!1sen!2sgr!4v1655908966002!5m2!1sen!2sgr",
+  "image": "images/menoudeli.png",
+  "price": "5",
+  "tickets": 0
+}]
