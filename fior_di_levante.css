@@ -1,0 +1,240 @@
+*{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+	padding: 20px;
+	width: 100%;
+	padding-bottom:80px;
+	overflow: hidden;
+}
+
+#logo_img{
+	background-image:  
+		linear-gradient(
+			rgba(231, 222, 216, 0.562), 
+			rgba(231, 222, 216, 0.562)
+		), 
+	url(images/zakynthos_chora.jpg);
+}
+
+nav{
+	background-color: #104a6c;
+}
+
+nav ul li{
+	margin: 10px 20px 10px 20px;
+}
+
+nav a{
+	color: #c5ced3;
+	font-size: 20px;
+}
+
+nav a:hover{
+	color: #c5ced3;
+	text-decoration: none;
+	font-family: 'Brightwall', sans-serif;
+                                                
+}
+
+.active{
+	font-family: 'Brightwall', sans-serif;
+}
+
+.dropdown-menu a{
+	color: #104a6c;
+}
+
+.dropdown-menu a:hover{
+	color: #104a6c;
+}
+
+#search form{
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: flex;
+}
+
+#search input[type=text] {
+	width: 30%;
+	padding: 5px;
+	background-color: rgb(190, 190, 189);
+	border: none;
+}
+
+#search button {
+	padding: 6px 10px;
+	background-color: #ddd;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+}
+
+#search button:hover {
+	background-color: #ccc;
+}
+
+#search{
+	margin-bottom: 20px;
+}
+
+/*FORMS*/
+.middle{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	
+	.middle{
+		border-right: none;
+	}
+}
+
+@media (max-width: 767px){
+	
+	.middle{
+		border: none;
+	}
+}
+
+.admin-forms{
+	margin-top: 20px ;
+}
+
+.admin-forms h3{
+	text-decoration: underline;
+	text-align: center;
+}
+
+.general-form form{
+	margin-top: 20px;
+	padding: 5px;
+}
+
+.general-form label{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.general-form form > button{
+	margin-top: 15px;
+}
+
+.general-form label::before{
+	margin: 28px 0 0;
+	font-size: 14px;
+	color: #5a5a5a;
+}
+
+.general-form input:focus{
+	outline: none !important;
+    border:1px solid #104a6c;
+	border-radius: 2px;
+}
+
+.required{
+	color: red;
+}
+
+.general-form button{
+	margin-top: 20px;
+}
+
+/*FOOTER*/
+footer{
+	width: 100%;
+	background-color: #104a6c;
+	clear: both;
+	bottom:0;
+	height: 100%;
+	padding:30px;
+	text-align: center;
+}
+
+footer p{
+	text-align: justify;
+}
+
+footer a{
+	color: #c5ced3;
+}
+
+footer a:hover{
+	color: #c5ced3;
+}
+
+.social-icons{
+    text-align:center;
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+}
+
+.social-icons li{
+	display:inline-block;
+	margin-bottom:4px;
+	margin: 20px;
+}
+
+.social-icons li.title{
+	margin-right:15px;
+	text-transform:uppercase;
+	color:#96a2b2;
+	font-weight:700;
+	font-size:13px;
+}
+
+.social-icons a{
+	background-color:#eceeef;
+	color:#818a91;
+	font-size:16px;
+	display:inline-block;
+	line-height:44px;
+	width:44px;
+	height:44px;
+	text-align:center;
+	margin-right:8px;
+	border-radius:100%;
+	-webkit-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover{
+  	color:#fff;
+}
+
+.social-icons a.facebook:hover{
+	background-color:#3b5998;
+}
+
+.social-icons a.instagram:hover{
+	background-color:#073d54;
+}
+
+.social-icons a.email:hover{
+  	background-color:#1c6886;
+}
+
+.social-icons a.telephone:hover{
+	background-color:#7ca8bc;
+}
+
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
