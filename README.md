@@ -83,8 +83,6 @@ Additional technologies:
 - MongoDB Atlas / MongoDB
 - EJS Templates
 
-【1-02b959】【2-b0c6c5】
-
 ## Database Design
 
 The application uses a MongoDB database named:
@@ -121,25 +119,9 @@ The database stores:
 
 ```text
 .
-├── my_files/
-│   ├── HTML
-│   ├── CSS
-│   ├── JavaScript
-│   ├── AngularJS
-│   └── Node.js
-│
-├── my_db/
-│   ├── users.json
-│   ├── landmarks.json
-│   ├── accommodations.json
-│   ├── events.json
-│   ├── activities.json
-│   ├── itineraries.json
-│   └── reservations.json
-│
-├── my_documentation/
-│   └── project-report.pdf
-│
+├── assets/
+├── database/
+├── views
 └── README.md
 ```
 
