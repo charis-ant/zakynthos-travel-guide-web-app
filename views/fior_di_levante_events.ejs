@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fior di Levante | Events</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/38fe6d47dd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="http://fonts.cdnfonts.com/css/brightwall" rel="stylesheet">
+                
+        <link rel="stylesheet" href="../fior_di_levante.css">
+
+        <script src="../fior_di_levante.js"></script>
+
+        <style>
+            .event-item img {
+                width: 100%;
+                display: block;
+            }
+
+            .event-item a {
+                display: flex;
+                padding: 50px;
+                overflow: hidden;
+                align-items: center;
+                max-width: 1000px;
+                margin: auto;
+                color: #333;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                border-radius: 6px;
+                margin-bottom: 50px;
+                text-decoration: none;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+
+            .event-item a:hover {
+                box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+
+            .event-item .icon {
+                width: 35%;
+                object-fit: cover;
+                margin-right: 50px;
+                border-radius: 6px;
+                overflow: hidden;
+                box-shadow: 0 15px 26px rgba(0, 0, 0, 0.4);
+            }
+
+            .event-item .content {
+                width: 65%;
+            }
+
+            .event-item .content .title {
+                font-size: 21px;
+                text-transform: capitalize;
+                color: #25aae1;
+                font-weight: 600;
+                font-family: 'Lato', sans-serif;
+            }
+
+
+
+            .event-item .content .title .event-data {
+                font-size: 12px;
+                margin-left: 20px;
+                color: #333;
+                font-family: 'Lato', sans-serif;
+            }
+
+            .event-item .content .title .event-data:before {
+                content: '/';
+                color: #2bb673;
+                font-size: 25px;
+                top: auto;
+                position: relative;
+                margin-right: 10px;
+            }
+
+            .event-item .content .rounded {
+                margin-left: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .event-item .item-arrow {
+                height: 20px;
+                width: 15%;
+                position: relative;
+                text-align: center;
+                font-size: 35px;
+                left: 0;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+
+            .event-item a:hover > .item-arrow {
+                color: #25aae1;
+                left: 30px;
+                -webkit-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+
+            .rounded {
+                width: 70px;
+                height: 5px;
+                border-radius: 6px;
+                background-image: linear-gradient(to right, #25aae1, #40e495);
+                margin-left: 0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 768px){
+
+                .event-item .content {
+                    width: 100%;
+                    margin-top: 35px;
+                }
+
+                .event-item .content .title {
+                    font-size: 18px;
+                }
+
+                .event-item .item-arrow {
+                    margin: auto;
+                }
+
+                .event-item .icon {
+                    width: 100%;
+                }
+
+                .event-item .icon img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+
+                .event-item {
+                    width: 92%;
+                    margin: auto;
+                }
+
+                .event-item a {
+                    display: block;
+                    padding: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar-expand-sm mx-auto">
+            <div id="logo_img" class="d-flex justify-content-center">
+                <a href="fior_di_levante_home"><img src="../images/logo.png" alt="logo" width="300px"></a>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <ul class="nav navbar-nav">
+                    <li><a href="fior_di_levante_home">Home</a></li>
+                    <li><a href="fior_di_levante_zakynthos">About Zakynthos</a></li>
+                    <li><a href="fior_di_levante_accommodation">Accommodation</a></li>
+                    <li class="dropdown"><a class="active dropdown-toggle" data-toggle="dropdown">Things to do <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class=active href="fior_di_levante_events">Events</a></li>
+                        <li><a href="fior_di_levante_activities">Activities</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="fior_di_levante_day_planner">Day Planner</a></li>
+                    <% if (locals.user_email == undefined){ %> 
+                    <li><a href="fior_di_levante_sign">Sign Up/Sign In</a></li>
+                    <% }else{ %> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fior_di_levante_profile">Profile</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <% if (data.length != 0){
+                var index = 0;
+                data.forEach(function(document){%> 
+                <div class="event-item">
+                    <a <% if (locals.user_email == undefined){ %> href="#" onclick="window.alert('You have to be logged in, in order to use this function')" <% }else{ %> href="fior_di_levante_event_reservation?document_name=<%= document.name %>"<% } %>>
+                        <div class="icon">
+                            <img id="image<%= index %>" src="<%= document.image %>" alt="<%= document.name %>">
+                        </div>
+                        <div class="content">
+                            <div class="title"><%= document.name %><span class="event-data"> <%= document.date %> - Ticket: <%= document.price %>&euro;</span></div>
+                            <div class="rounded"></div>
+                            <p>
+                                <%= document.description %>
+                            </p>
+                        </div>
+                        <div class="item-arrow">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <div id="box<%= index %>" class="extend" style="border: 1px solid black; width:1000px; background-color: white; padding: 20px; padding-top: 5px; z-index: 1; display: none; position: fixed; top: 10%; right: 10%; left: 20%;">
+                            <h2 align="center"><u><%= document.name %></u></h2>
+                            <div class="d-flex justify-content-center">
+                                <iframe src="<%= document.map %>" width="800" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                </div>
+            <% index++; }) %>
+            <% }else{ %>
+                <div>
+                    <h1>There are no events found!</h1>    
+                </div>
+            <% } %>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6><b><u>About</b></u></h6>
+                    <p>
+                        Fior di Levante is a travel guide for the island of Zakynthos. We offer you suggestions for activities, local events, places to stay, to have fun, restaurants to eat  and more. We hope you enjoy your time exploring Zakynthos.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Categories</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="fior_di_levante_zakynthos" target="_self">Zakynthos</a></li>
+                        <li><a href="fior_di_levante_privacy_policy">Privacy Policy</a></li>
+                        <li><a href="fior_di_levante_terms_conditions">Terms & Conditions</a></li>
+                        <li><a href="fior_di_levante_rating">Rate Zakynthos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Payment Methods</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i style="font-size:30px" class="fa fa-cc-mastercard"></i>
+                            <i style="font-size:30px" class="fa fa-cc-visa"></i>
+                            <i style="font-size:30px" class="fa fa-cc-amex"></i>
+                            <i style="font-size:30px" class="fa fa-cc-diners-club"></i>
+                            <i style="font-size:30px" class="fa fa-paypal"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6"><p class="copyright-text" style="line-height: 90px; text-align: center;">&copy; Fior di Levante 2022. All rights reserved.</p></div>
+                <div class="col-lg-6">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/ds.unipi.gr" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/haarrisa/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="email" href="mailto:harisantoniadi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a class="telephone" href="tel:+30210 4142000"><i class="fas fa-phone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>         
+    </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fior di Levante | Day Planner</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/38fe6d47dd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="http://fonts.cdnfonts.com/css/brightwall" rel="stylesheet">
+                
+        <link rel="stylesheet" href="../fior_di_levante.css">
+
+        <script src="../fior_di_levante.js"></script>
+
+        <style>
+           #day-planner-form form{
+                font-size: 18px;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 20px;
+            }
+
+            #day-planner-form label::before{
+                margin: 28px 0 0;
+                font-size: 14px;
+                color: #5a5a5a;
+            }
+
+            #day-planner-form input{
+                margin-bottom: 15px;
+                width: 100%;
+                padding: 10px;
+                background: none;
+                outline: none;
+                border: 0;
+                border-bottom: 2px solid #949290;
+            }
+
+            #day-planner-form input:focus{
+                transition: all 0.3s;
+                border-bottom: 2px solid #104a6c;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar-expand-sm">
+            <div id="logo_img" class="d-flex justify-content-center">
+                <a href="fior_di_levante_home"><img src="../images/logo.png" alt="logo" width="300px"></a>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <ul class="nav navbar-nav">
+                    <li><a href="fior_di_levante_home">Home</a></li>
+                    <li><a href="fior_di_levante_zakynthos">About Zakynthos</a></li>
+                    <li><a href="fior_di_levante_accommodation">Accommodation</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Things to do <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fior_di_levante_events">Events</a></li>
+                        <li><a href="fior_di_levante_activities">Activities</a></li>
+                    </ul>
+                    </li>
+                    <li><a class=active href="fior_di_levante_day_planner">Day Planner</a></li>
+                    <% if (locals.user_email == undefined){ %> 
+                    <li><a href="fior_di_levante_sign">Sign Up/Sign In</a></li>
+                    <% }else{ %> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fior_di_levante_profile">Profile</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <h2 align="center">Plan Your Day...with Fior di Levante Day Planner</h2>
+            <hr>
+            <br>
+            <div class="d-flex justify-content-center">
+                <form id="day-planner-form" method="POST" action="/add_to_itinerary" class="mx-auto">
+                    <label for="email">Email<span class="required"> *</span></label>
+                    <input type="text" id="email" name="email" required placeholder="Enter your email address">
+                    <br>
+                    <div>
+                        <label for="day">Pick a day:<span class="required"> *</span></label>
+                        <input type="date" id="day" name="day" max="2022-12-31" required>
+                        <script>
+                            var today = new Date();
+                            today.setDate(today.getDate());
+                            today.toJSON().slice(0,10);
+                            document.getElementById("day").min = today.toJSON().slice(0,10);
+                        </script>
+                    </div>
+                    <br>
+                    <div id="input-items">
+                        <div id="clones">
+                            <hr>
+                            <label for="activity-time">Select a time:<span class="required"> *</span></label>
+                            <input type="time" id="activity-time" name="activity_time[]" required><br><br>
+                            <label for="activities">And then, choose an activity:<span class="required"> *</span></label>
+                            <select name="activity[]" id="activities" required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <% if (data.length != 0){
+                                    data.forEach(function(document){ %>
+                                        <option value="<%= document.name %>"><%= document.name %></option>
+                                <%  }) %>
+                                <% }else{ %>
+                                    <option disabled value="No Activities">There are no activities</option>
+                                <% } %>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
+                    <button id="add-items" type="button" class="btn btn-primary">Add New Activity</button>
+                    <br><br>
+                    <div class="d-flex justify-content-center">
+                        <button type="reset" class="btn btn-secondary" value="Clear" style="margin: 10px;">Reset</button>
+                        <button type="submit" id="add-itinerary" class="btn btn-success" style="margin: 10px;">Add to itinerary</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6><b><u>About</b></u></h6>
+                    <p>
+                        Fior di Levante is a travel guide for the island of Zakynthos. We offer you suggestions for activities, local events, places to stay, to have fun, restaurants to eat  and more. We hope you enjoy your time exploring Zakynthos.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Categories</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="fior_di_levante_zakynthos" target="_self">Zakynthos</a></li>
+                        <li><a href="fior_di_levante_privacy_policy">Privacy Policy</a></li>
+                        <li><a href="fior_di_levante_terms_conditions">Terms & Conditions</a></li>
+                        <li><a href="fior_di_levante_rating">Rate Zakynthos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Payment Methods</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i style="font-size:30px" class="fa fa-cc-mastercard"></i>
+                            <i style="font-size:30px" class="fa fa-cc-visa"></i>
+                            <i style="font-size:30px" class="fa fa-cc-amex"></i>
+                            <i style="font-size:30px" class="fa fa-cc-diners-club"></i>
+                            <i style="font-size:30px" class="fa fa-paypal"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6"><p class="copyright-text" style="line-height: 90px; text-align: center;">&copy; Fior di Levante 2022. All rights reserved.</p></div>
+                <div class="col-lg-6">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/ds.unipi.gr" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/haarrisa/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="email" href="mailto:harisantoniadi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a class="telephone" href="tel:+30210 4142000"><i class="fas fa-phone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>         
+    </body>
+</html>

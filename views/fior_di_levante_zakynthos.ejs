@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fior di Levante | About Zakynthos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/38fe6d47dd.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="http://fonts.cdnfonts.com/css/brightwall" rel="stylesheet">
+                
+        <link rel="stylesheet" href="../fior_di_levante.css">
+
+        <script src="../fior_di_levante.js"></script>
+
+        <style>
+            #description, #sights p{
+                text-align: justify;
+            }
+
+            #landmark{
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar-expand-sm mx-auto">
+            <div id="logo_img" class="d-flex justify-content-center">
+                <a href="fior_di_levante_home"><img src="../images/logo.png" alt="logo" width="300px"></a>
+            </div>
+            <div class="container-fluid d-flex justify-content-center">
+                <ul class="nav navbar-nav">
+                    <li><a href="fior_di_levante_home">Home</a></li>
+                    <li><a class=active href="fior_di_levante_zakynthos">About Zakynthos</a></li>
+                    <li><a href="fior_di_levante_accommodation">Accommodation</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Things to do <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="fior_di_levante_events">Events</a></li>
+                        <li><a href="fior_di_levante_activities">Activities</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="fior_di_levante_day_planner">Day Planner</a></li>
+                    <% if (locals.user_email == undefined){ %> 
+                    <li><a href="fior_di_levante_sign">Sign Up/Sign In</a></li>
+                    <% }else{ %> 
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="fior_di_levante_profile">Profile</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                    <% } %> 
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <section id="description">
+                        <h3>
+                        White beaches, sea turtles and a party atmosphere make Zante – or Zakynthos as the island is known in Greek – a favourite holiday destination in the magical Ionian Sea.
+                        </h3>
+                        <p>
+                            Zakynthos (aka Zante) is a verdant island endowed with fertile valleys and a temperate climate (area: 406 sq. km; coastline: 123 km). Its landscape diversity has resulted in different types of beaches: there are sandy beaches in secluded coves where the tranquil waters are deep blue on the island’s southeastern part; yet, if rugged cliffs and an interesting underwater world are to your liking, try the western part of the island.
+                            The Venetians, who ruled Zákynthos from 1484 to 1797, called the island “Fioro di Levante” (flower of the East) as there are over 7,000 species of flowers on Zákynthos. The third largest island of the Ionian Sea, after Corfu and Kefalonia, is internationally known as “Zante”. Zakynthos is said to have been the island’s first inhabitant and the ancient acropolis is attributed to him. He was the son of Dardanos who ruled the ancient kingdom of Frigia. A Venetian fort was built at later times on the site.  
+                        </p>
+                    </section> 
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <section id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201794.17395006077!2d20.666362527375078!3d37.789243708935004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x136740cadc7b5abf%3A0x27a074dbe04c2ad1!2sZakynthos!5e0!3m2!1sen!2sgr!4v1655573163363!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <section id="sights">
+                    <div class="row">
+                        <% if (data.length != 0){
+                            data.forEach(function(document){ %>
+                                <div class="col-lg-4 col-md-6 col-sm-12" id="landmark">
+                                    <h4><%= document.name %></h4>
+                                    <p>
+                                        <%= document.description %>
+                                    </p>
+                                    <img src="<%= document.image %>" width="100%">
+                                </div>
+                            <% }) %>
+                        <% }else{ %>
+                            <div>
+                                <h1>There are no landmarks found!</h1>    
+                            </div>
+                        <% } %>
+                </section>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <section class="mx-auto" id="access">
+                    <h2 align="center">Getting here...</h2>
+                    <br>
+                    <span><a href="https://www.levanteferries.com/" target="_blank"><i class="fa-solid fa-ship"></i> By boat:</a> Four-hour drive from Athens to Kyllini Port, then hop on a ferry to Zakynthos, the trip lasts approximately one hour.</span><br>
+                    <span><a href="https://en.aegeanair.com/" target="_blank"><i class="fa-solid fa-plane"></i> By plane:</a> One-hour flight from Athens to Zakynthos’ Airport in Laganas</span><br>
+                    <br>
+                    <span class="d-flex justify-content-center">You can book your tickets on <a href="https://www.kritsia.gr/" target="_blank"> Kritsia Travel</a></span>
+                </section>
+            </div>
+        </div> 
+        <footer>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h6><b><u>About</b></u></h6>
+                    <p>
+                        Fior di Levante is a travel guide for the island of Zakynthos. We offer you suggestions for activities, local events, places to stay, to have fun, restaurants to eat  and more. We hope you enjoy your time exploring Zakynthos.
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Categories</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li><a href="fior_di_levante_zakynthos" target="_self">Zakynthos</a></li>
+                        <li><a href="fior_di_levante_privacy_policy">Privacy Policy</a></li>
+                        <li><a href="fior_di_levante_terms_conditions">Terms & Conditions</a></li>
+                        <li><a href="fior_di_levante_rating">Rate Zakynthos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6><b><u>Payment Methods</b></u></h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i style="font-size:30px" class="fa fa-cc-mastercard"></i>
+                            <i style="font-size:30px" class="fa fa-cc-visa"></i>
+                            <i style="font-size:30px" class="fa fa-cc-amex"></i>
+                            <i style="font-size:30px" class="fa fa-cc-diners-club"></i>
+                            <i style="font-size:30px" class="fa fa-paypal"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-6"><p class="copyright-text" style="line-height: 90px; text-align: center;">&copy; Fior di Levante 2022. All rights reserved.</p></div>
+                <div class="col-lg-6">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/ds.unipi.gr" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/haarrisa/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="email" href="mailto:harisantoniadi@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a class="telephone" href="tel:+30210 4142000"><i class="fas fa-phone"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
