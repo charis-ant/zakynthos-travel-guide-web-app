@@ -54,7 +54,7 @@ The application was designed for:
 - Tablets
 - Smartphones
 
-Responsive behavior was implemented using Bootstrap and custom CSS. 【1-02b959】
+Responsive behavior was implemented using Bootstrap and custom CSS.
 
 ### Voice Search
 
@@ -111,8 +111,7 @@ The database stores:
 - Activities
 - User itineraries
 - Reservation records
-
-【1-02b959】
+  
 
 ## Project Structure
 
@@ -143,7 +142,7 @@ Tools used:
 - Mockingbird
 - Figma
 
-【1-02b959】
+
 
 ## Learning Outcomes
 
