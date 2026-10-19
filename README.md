@@ -119,7 +119,12 @@ The database stores:
 .
 ├── assets/
 ├── database/
-├── views
+├── views/
+├── docs/
+├── fior_di_levante.css
+├── fior_di_levante.js
+├── package.json
+├── server.js
 └── README.md
 ```
 
