@@ -6,9 +6,9 @@ The application provides visitors with information about Zakynthos while allowin
 
 ## Overview
 
-"Fior di Levante" (Flower of the East) is a tourism-focused web application designed to help visitors discover and organize their trip to Zakynthos.
+"Fior di Levante" is a tourism-focused web application designed to help visitors discover and organize their trip to Zakynthos.
 
-The project combines destination information, accommodation reservations, event bookings, activity discovery, and itinerary planning into a single platform. 【1-02b959】
+The project combines destination information, accommodation reservations, event bookings, activity discovery, and itinerary planning into a single platform.
 
 ## Features
 
@@ -42,7 +42,7 @@ The project combines destination information, accommodation reservations, event 
 - Reservation management
 - Ticket monitoring and reporting
 
-These features were implemented according to the project requirements and user stories defined during the analysis phase. 【2-b0c6c5】【1-02b959】
+These features were implemented according to the project requirements and user stories defined during the analysis phase.
 
 ## Modern Web Trends Implemented
 
@@ -58,12 +58,11 @@ Responsive behavior was implemented using Bootstrap and custom CSS. 【1-02b959�
 
 ### Voice Search
 
-Users can perform voice-based searches for activities, providing an alternative interaction mechanism alongside traditional search. 【1-02b959】
+Users can perform voice-based searches for activities, providing an alternative interaction mechanism alongside traditional search.
 
 ### Form Validation using AngularJS
 
-AngularJS was used to validate registration and login forms before submission. 【1-02b959】
-
+AngularJS was used to validate registration and login forms before submission.
 ## Technology Stack
 
 The application is based on the MEAN stack:
@@ -80,7 +79,7 @@ Additional technologies:
 - Bootstrap
 - JavaScript
 - jQuery
-- MongoDB Atlas / MongoDB
+- MongoDB
 - EJS Templates
 
 ## Database Design
